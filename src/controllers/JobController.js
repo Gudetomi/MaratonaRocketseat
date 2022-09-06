@@ -37,6 +37,7 @@ module.exports = {
         const jobId = req.params.id
         const jobs = Job.get()
         const job = jobs.find(job => Number(job.id) === Number(jobId))
+        console.log(req.body["daily-hours"])
 
         if(!job){
             return res.send('Job not found!')

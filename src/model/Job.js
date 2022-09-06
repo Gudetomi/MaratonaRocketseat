@@ -2,14 +2,14 @@ let data = [
     {
         id:1,
         name:"Pizzaria Guloso",
-        "daily-hours": 2,
+        "daily-hours":2,
         "total-hours":60,
         created_at: Date.now()
     },
     {
         id:2,
         name:"One Two Project",
-        "daily-hours": 2,
+        "daily-hours":2,
         "total-hours":120,
         created_at: Date.now()
     }
