@@ -2,6 +2,7 @@ const express = require('express')
 const server = express()
 const routes = require("./routes")
 const path = require('path')
+const port = 3000
 
 //usando template engine
 server.set('view engine','ejs')
@@ -18,4 +19,4 @@ server.use(express.urlencoded({extended : true}))
 //routes
 server.use(routes)
 
-server.listen(3000,()=>console.log('rodando listening on port 3000'))
+server.listen(port,()=>console.log('rodando listening on port: ' + port))
